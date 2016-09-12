@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ey4-pM-b0W">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--News-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="152" sectionHeaderHeight="28" sectionFooterHeight="28" id="my6-3Q-K0y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categories" rowHeight="41" id="A27-yX-YWY" customClass="CategoryRow" customModule="RSSReader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A27-yX-YWY" id="7cC-MR-bHx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-YQ-Pgc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="151.5"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Ig4-IS-CzB">
+                                                <size key="itemSize" width="130" height="30"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="5" minY="5" maxX="0.0" maxY="5"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsArticle" id="iFp-zV-1Jb">
+                                                    <rect key="frame" x="5" y="5" width="130" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <color key="backgroundColor" red="0.082574312826109719" green="1" blue="0.54031178835147053" alpha="1" colorSpace="calibratedRGB"/>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="A27-yX-YWY" id="j6C-3z-5fB"/>
+                                                <outlet property="delegate" destination="A27-yX-YWY" id="fOR-hz-ziQ"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bQ2-YQ-Pgc" firstAttribute="leading" secondItem="7cC-MR-bHx" secondAttribute="leading" id="HqG-kc-xWi"/>
+                                        <constraint firstAttribute="trailing" secondItem="bQ2-YQ-Pgc" secondAttribute="trailing" id="MVa-6l-V0z"/>
+                                        <constraint firstItem="bQ2-YQ-Pgc" firstAttribute="top" secondItem="7cC-MR-bHx" secondAttribute="top" id="ehB-aH-ghj"/>
+                                        <constraint firstAttribute="bottom" secondItem="bQ2-YQ-Pgc" secondAttribute="bottom" id="mjE-k8-VzB"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="115" id="LTG-PF-K2I" customClass="CategoryRow" customModule="RSSReader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="133" width="600" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LTG-PF-K2I" id="q18-ad-4TC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="114.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-bX-SQF">
+                                            <rect key="frame" x="0.0" y="-8" width="600" height="121.5"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Z9k-QH-kSK">
+                                                <size key="itemSize" width="125" height="106.5"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="5" minY="5" maxX="0.0" maxY="5"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsArticle" id="7I6-YA-n2e">
+                                                    <rect key="frame" x="5" y="7.5" width="125" height="106.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="106.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="bezel" placeholder="I can see how this turns out, when the content is really long" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSP-nf-bea">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="109"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <color key="backgroundColor" red="0.082574312829999996" green="1" blue="0.54031178840000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="WSP-nf-bea" secondAttribute="trailing" id="KBW-FJ-7lx"/>
+                                                        <constraint firstItem="WSP-nf-bea" firstAttribute="leading" secondItem="7I6-YA-n2e" secondAttribute="leadingMargin" id="OOL-UP-ocp"/>
+                                                        <constraint firstItem="WSP-nf-bea" firstAttribute="top" secondItem="7I6-YA-n2e" secondAttribute="topMargin" id="ajr-L6-HIt"/>
+                                                    </constraints>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="LTG-PF-K2I" id="ECV-sp-x3G"/>
+                                                <outlet property="delegate" destination="LTG-PF-K2I" id="hUa-yL-g2K"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Lei-bX-SQF" firstAttribute="leading" secondItem="q18-ad-4TC" secondAttribute="leading" id="7c8-fV-VxO"/>
+                                        <constraint firstAttribute="bottom" secondItem="Lei-bX-SQF" secondAttribute="bottom" id="CBI-Q6-P1i"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lei-bX-SQF" secondAttribute="trailing" id="L1y-mk-ktQ"/>
+                                        <constraint firstItem="Lei-bX-SQF" firstAttribute="top" secondItem="q18-ad-4TC" secondAttribute="top" id="c2t-6S-qGz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BYZ-38-t0r" id="gfi-7o-u3s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News" id="JvH-5z-gsV"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a5H-s6-p53">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ey4-pM-b0W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n4T-3R-HS8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ziu-v5-6S3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NII-d7-Qf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="75"/>
+        </scene>
+    </scenes>
+</document>

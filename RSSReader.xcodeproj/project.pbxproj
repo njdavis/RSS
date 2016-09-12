@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E53338C21D87614100499334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338C11D87614100499334 /* AppDelegate.swift */; };
-		E53338C41D87614100499334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338C31D87614100499334 /* ViewController.swift */; };
-		E53338C71D87614100499334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53338C51D87614100499334 /* Main.storyboard */; };
 		E53338C91D87614100499334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53338C81D87614100499334 /* Assets.xcassets */; };
 		E53338CC1D87614100499334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53338CA1D87614100499334 /* LaunchScreen.storyboard */; };
+		E53338D91D87616400499334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338D41D87616400499334 /* AppDelegate.swift */; };
+		E53338DA1D87616400499334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338D51D87616400499334 /* ViewController.swift */; };
+		E53338DB1D87616400499334 /* SectionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338D61D87616400499334 /* SectionCreator.swift */; };
+		E53338DC1D87616400499334 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338D71D87616400499334 /* CategoryRow.swift */; };
+		E53338DD1D87616400499334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53338D81D87616400499334 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E53338BE1D87614100499334 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E53338C11D87614100499334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E53338C31D87614100499334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E53338C61D87614100499334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E53338C81D87614100499334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53338CB1D87614100499334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E53338CD1D87614100499334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53338D31D87616300499334 /* RSSReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Bridging-Header.h"; sourceTree = "<group>"; };
+		E53338D41D87616400499334 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E53338D51D87616400499334 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E53338D61D87616400499334 /* SectionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCreator.swift; sourceTree = "<group>"; };
+		E53338D71D87616400499334 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		E53338D81D87616400499334 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +59,15 @@
 		E53338C01D87614100499334 /* RSSReader */ = {
 			isa = PBXGroup;
 			children = (
-				E53338C11D87614100499334 /* AppDelegate.swift */,
-				E53338C31D87614100499334 /* ViewController.swift */,
-				E53338C51D87614100499334 /* Main.storyboard */,
+				E53338D41D87616400499334 /* AppDelegate.swift */,
+				E53338D51D87616400499334 /* ViewController.swift */,
+				E53338D61D87616400499334 /* SectionCreator.swift */,
+				E53338D71D87616400499334 /* CategoryRow.swift */,
+				E53338D81D87616400499334 /* Main.storyboard */,
 				E53338C81D87614100499334 /* Assets.xcassets */,
 				E53338CA1D87614100499334 /* LaunchScreen.storyboard */,
 				E53338CD1D87614100499334 /* Info.plist */,
+				E53338D31D87616300499334 /* RSSReader-Bridging-Header.h */,
 			);
 			path = RSSReader;
 			sourceTree = "<group>";
@@ -123,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53338DD1D87616400499334 /* Main.storyboard in Resources */,
 				E53338CC1D87614100499334 /* LaunchScreen.storyboard in Resources */,
 				E53338C91D87614100499334 /* Assets.xcassets in Resources */,
-				E53338C71D87614100499334 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +144,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E53338C41D87614100499334 /* ViewController.swift in Sources */,
-				E53338C21D87614100499334 /* AppDelegate.swift in Sources */,
+				E53338DB1D87616400499334 /* SectionCreator.swift in Sources */,
+				E53338DA1D87616400499334 /* ViewController.swift in Sources */,
+				E53338DC1D87616400499334 /* CategoryRow.swift in Sources */,
+				E53338D91D87616400499334 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E53338C51D87614100499334 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E53338C61D87614100499334 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E53338CA1D87614100499334 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -250,10 +252,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RSSReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = njdavis.VirginiaTech.1993.RSSReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSReader/RSSReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +266,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RSSReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = njdavis.VirginiaTech.1993.RSSReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSReader/RSSReader-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RSSReader
 //
-//  Created by Noah Davis on 9/12/16.
+//  Created by Noah Davis on 8/6/16.
 //  Copyright © 2016 Noah Davis. All rights reserved.
 //
 
