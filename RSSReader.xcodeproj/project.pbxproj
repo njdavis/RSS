@@ -14,6 +14,8 @@
 		E53338DB1D87616400499334 /* SectionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338D61D87616400499334 /* SectionCreator.swift */; };
 		E53338DC1D87616400499334 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338D71D87616400499334 /* CategoryRow.swift */; };
 		E53338DD1D87616400499334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53338D81D87616400499334 /* Main.storyboard */; };
+		E53338DF1D87CA1900499334 /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338DE1D87CA1900499334 /* NewsSource.swift */; };
+		E53338E11D87CBF200499334 /* NewsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53338E01D87CBF200499334 /* NewsCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E53338D61D87616400499334 /* SectionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCreator.swift; sourceTree = "<group>"; };
 		E53338D71D87616400499334 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		E53338D81D87616400499334 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E53338DE1D87CA1900499334 /* NewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsSource.swift; sourceTree = "<group>"; };
+		E53338E01D87CBF200499334 /* NewsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E53338D51D87616400499334 /* ViewController.swift */,
 				E53338D61D87616400499334 /* SectionCreator.swift */,
 				E53338D71D87616400499334 /* CategoryRow.swift */,
+				E53338DE1D87CA1900499334 /* NewsSource.swift */,
+				E53338E01D87CBF200499334 /* NewsCategory.swift */,
 				E53338D81D87616400499334 /* Main.storyboard */,
 				E53338C81D87614100499334 /* Assets.xcassets */,
 				E53338CA1D87614100499334 /* LaunchScreen.storyboard */,
@@ -146,6 +152,8 @@
 			files = (
 				E53338DB1D87616400499334 /* SectionCreator.swift in Sources */,
 				E53338DA1D87616400499334 /* ViewController.swift in Sources */,
+				E53338E11D87CBF200499334 /* NewsCategory.swift in Sources */,
+				E53338DF1D87CA1900499334 /* NewsSource.swift in Sources */,
 				E53338DC1D87616400499334 /* CategoryRow.swift in Sources */,
 				E53338D91D87616400499334 /* AppDelegate.swift in Sources */,
 			);

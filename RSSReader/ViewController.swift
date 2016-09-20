@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource {
      
 //news sources
     
+    @IBOutlet weak var articleTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,12 +37,28 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
         return newsSources[section]
     }
+    
+    /*func tableView(tableView: UITableView, ViewForHeaderInSection section: Int) -> UIView! {
+        return tableView.backgroundColor = UIColor.lightGrayColor()
+    }*/
+    
+    
+    /*func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
+    {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.font = UIFont(name: "Futura", size: 38)!
+        header.textLabel?.textColor = UIColor.blueColor()
+    }*/
+    
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! CategoryRow
