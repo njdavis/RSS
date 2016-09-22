@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AlamofireRSSParser
 
 
 class NewsSoure{

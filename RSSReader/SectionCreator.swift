@@ -12,7 +12,7 @@ class SectionCreator {
     
     var returnSourceTitles = ["Action", "Drama", "Science Fiction", "Kids", "Horror"]
 
-    func addSource (title: Array<String>) -> Array<String> {
+    func addSource (_ title: Array<String>) -> Array<String> {
         returnSourceTitles += title
         return returnSourceTitles
     }    

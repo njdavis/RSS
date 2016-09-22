@@ -15,7 +15,7 @@ class CategoryRow: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
@@ -25,12 +25,12 @@ class CategoryRow: UITableViewCell {
 
 extension CategoryRow : UICollectionViewDataSource {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 12
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let newsArticle = collectionView.dequeueReusableCellWithReuseIdentifier("newsArticle", forIndexPath: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let newsArticle = collectionView.dequeueReusableCell(withReuseIdentifier: "newsArticle", for: indexPath)
         return newsArticle
     }
     
@@ -38,7 +38,7 @@ extension CategoryRow : UICollectionViewDataSource {
 
 extension CategoryRow : UICollectionViewDelegateFlowLayout {
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let hardCodedPadding:CGFloat = 5
         let itemWidth:CGFloat = 110
         let itemHeight = collectionView.bounds.height - (2 * hardCodedPadding)

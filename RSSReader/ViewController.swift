@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AlamofireRSSParser
+import Alamofire
 
 class ViewController: UIViewController, UITableViewDataSource {
      
@@ -16,7 +18,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let url = "http://feeds.feedburner.com/StudyHacks"
+        
+        Alamofire.request(url).responseRSS() { (response) -> Void in
+            if let feed: RSSFeed = response.result.value {
+                //do something with your new RSSFeed object!
+                for item in feed.items {
+                    print(item.title)
+                }
+            }
+        }
     }
     
     var sourceCreator = SectionCreator()
@@ -32,36 +44,23 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return newsSources.count
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 
         return newsSources[section]
     }
-    
-    /*func tableView(tableView: UITableView, ViewForHeaderInSection section: Int) -> UIView! {
-        return tableView.backgroundColor = UIColor.lightGrayColor()
-    }*/
-    
-    
-    /*func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
-    {
-        let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.font = UIFont(name: "Futura", size: 38)!
-        header.textLabel?.textColor = UIColor.blueColor()
-    }*/
-    
 
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! CategoryRow
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
         return cell
     }
 
